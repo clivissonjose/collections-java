@@ -58,6 +58,7 @@ public class CatalogoLivros {
 			for(Livro l: listaLivros) {
 				if(l.getTitulo().equalsIgnoreCase(titulo)) {
 					livroPorTitulo =  l;
+					break;
 				}	
 			}
 		}else {
@@ -67,6 +68,24 @@ public class CatalogoLivros {
 		return livroPorTitulo;
 	}
 	
-	
+	public static void main(String [] args) {
+		
+		CatalogoLivros livros = new CatalogoLivros();
+		
+		livros.adicionarLivro("Sonho de ferraz", "Cesar Lopes", 2003);
+		livros.adicionarLivro("Ferrari", "Juliana Menezes", 1987);
+		livros.adicionarLivro("Catraca rosa", "Cesar Lopes", 2007);
+		livros.adicionarLivro("Carrosel", "Ramos Sérgio", 2005);
+		livros.adicionarLivro("Ferrari", "Lionel Messi ", 2017);
+		
+		
+		System.out.println("Livro: " + 	livros.pesquisarPorAutor("Cesar Lopes"));
+		
+		System.out.println("Livro: " + livros.pesquisarPorIntervaloAnos(2000, 2007));
+		
+		System.out.println("Livro: " + livros.pesquisarPorTitulo("Ferrari"));
+		
+		
+	}
 	
 }

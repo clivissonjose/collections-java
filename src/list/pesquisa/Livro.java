@@ -16,6 +16,11 @@ public class Livro {
 	
 	// Getters e setters
 	
+	@Override
+	public String toString() {
+		return "Livro [titulo=" + titulo + ", autor=" + autor + ", anoPublicacao=" + anoPublicacao + "]";
+	}
+
 	public String getAutor() {
 		return autor;
 	}
