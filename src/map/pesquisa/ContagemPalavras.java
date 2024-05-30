@@ -58,23 +58,7 @@ public class ContagemPalavras {
 		palavras.exibirContagemPalavras();
 		
 		System.out.println("Palavra mais frequente: " + palavras.encontrarPalavraMaisFrequente());
-	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	}	
 	
 	
 }
